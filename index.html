@@ -120,7 +120,7 @@
       <!-- Contenedor con estilo de salida de terminal -->
       <div class="output">
         <!-- Form accesible: label asociado a cada input -->
-        <form id="contact-form" class="contact-form" autocomplete="on" novalidate>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xyzdknkw" method="POST" autocomplete="on" novalidate>
           <!-- Nombre de quien escribe -->
           <label for="name">Nombre</label>
           <input type="text" id="name" name="name" placeholder="Tu nombre" required />
@@ -159,7 +159,9 @@
     </footer>
   </main>
 
-  <!-- Carga del script de efectos y envío de formulario -->
+  <!-- Carga del script que envía el formulario sin recargar la página.
+       (Los efectos de la terminal, como el cursor parpadeante, están en
+       el CSS: ver .cursor y @keyframes blink de style.css.) -->
   <script src="script.js"></script>
 </body>
 </html>

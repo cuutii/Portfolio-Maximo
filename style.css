@@ -164,6 +164,12 @@ body {
   margin: 0.25rem 0;
   color: #abb2bf;                     /* Mensajes de estado */
 }
+.form-status.error {
+  color: #e06c75;                     /* Error: rojo */
+}
+.form-status.ok {
+  color: #98c379;                     /* Éxito: verde */
+}
 
 /* ===========================
    Responsivo
